@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .exp {
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 10px auto;
+            padding: 10px;
+            display: flex;
+            flex-wrap: nowrap; /* Keeps items in a single row */
+            justify-content: space-evenly; /* Distributes space evenly between items */
+            align-items: center;
+            height: 300px; /* Adjust container height */
+            width: 100%; /* Makes it responsive */
+            max-width: 1000px; /* Optional: Maximum width for the container */
+        }
+
+        .box {
+            border: 3px solid green;
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1 {
+            background-color: blue;
+            color: white;
+        }
+
+        #box2 {
+            background-color: bisque;
+        }
+
+        #box3 {
+            background-color: brown;
+            color: white;
+        }
+
+        #box4 {
+            background-color: rgb(238, 172, 30);
+        }
+
+        /* Add hover effect for the container */
+        .exp:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="bigcontainer">
+        <div class="exp">
+            <div class="box" id="box1">
+                <p>Ankit Bhai Pyare</p>
+                <p>11222111</p>
+            </div>
+            <div class="box" id="box2">
+                <p>22222</p>
+            </div>
+            <div class="box" id="box3">
+                <p>333333</p>
+                <p>334444333</p>
+            </div>
+            <div class="box" id="box4">
+                <p>444444</p>
+                <p>444555444</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your event with Event Master - Seamless planning for weddings, corporate events, and more.">
+    <title>Book Your Event | Event Master</title>
+   <link rel="stylesheet" href="styles.css">
+       
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo" style="align-items: center; text-align: center; font-family: 'Times New Roman', serif;">EVENT ADDA...</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="aboutus.html" >About us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <section class="booking-front">
+        <div class="container">
+            <h1>Book Your Event Now</h1>
+            <p>Let’s make your dream event a reality. Fill out the form below to get started!</p><br><br>
+        </div>
+    </section>
+
+   
+    <section class="booking-form-section">
+        <h2>Fill Out Your Details</h2>
+        <form action="submit_booking.php" method="post" class="booking-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="event-type">Type of Event</label>
+            <select id="event-type" name="event_type" required>
+                <option value="">Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="details">Event Details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Provide additional details about your event" required></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Need Assistance?</h3>
+            <p>Call us at <strong>+1 234 567 890</strong> or email us at <strong>info@eventmaster.com</strong></p>
+        </div>
+    </section>
+
+    <div class="upperfooter">
+
+
+        <div class="contact-info-container">
+            <div class="conclusion">
+                <h4>
+                    V3 Events & Weddings<br>
+                    V3 Events and Entertainments Pvt Ltd is passionate about crafting charmingly timeless and elegant luxurious weddings and events at stunning venues throughout the world. As the leading wedding designers and event organisers in Delhi and Gurgaon, we are renowned to create authentic experiences worth cherishing for a lifetime.
+                </h4>
+            </div>
+        
+            <div class="CI">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> DLF Phase-2, Gurgaon, Haryana</p>
+                <p><strong>Email:</strong> info@v3events.in</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        
+            <div class="map">
+                <h2>Map Location</h2>
+                
+                <iframe 
+                    src="https://maps.google.com/maps?q=DLF%20Phase-2&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="300" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Event Master. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
